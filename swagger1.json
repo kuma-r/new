@@ -1,0 +1,259 @@
+{
+    "swagger": "2.0",
+    "info": {
+    "version": "1.0.0",
+    "description": "Query operations",
+    "title": "CRUD operations"
+    },
+    "host": "localhost:4000",
+    "basePath": "/",
+    "schemes": [
+    "http"
+    ],
+    "paths": {
+    "/api/genres/": {
+        "get": {
+            "description": "Diplays movies of requied category",
+            "responses": {
+            "200": {
+            "description": "Successfully fetched the data"
+            }
+            }
+            }
+        },
+        "/api/genres/Horror":{
+         "get":{
+        "description": "Diplays movies of requied category",
+            "responses": {
+            "200": {
+            "description": "Successfully fetched the data"
+            }
+            }
+                },
+        "post": {
+    "description": "Api of insert",
+    "consumes": [
+    "application/json"
+    ],
+    "produces": [
+    "application/json"
+    ],
+    "parameters": [
+    {
+    "in": "body",
+    "name": "body",
+    "description": "inserting new movies",
+    "required": true
+    }
+    ],
+    "responses": {
+    "200": {
+    "description": "successfully Inserted."
+    }
+    }
+    }},
+    "/api/genres/Romantic":{
+        "get":{
+       "description": "Diplays movies of requied category",
+           "responses": {
+           "200": {
+           "description": "Successfully fetched the data"
+           }
+           }
+               },
+       "post": {
+   "description": "Api of insert",
+   "consumes": [
+   "application/json"
+   ],
+   "produces": [
+   "application/json"
+   ],
+   "parameters": [
+   {
+   "in": "body",
+   "name": "body",
+   "description": "inserting new movies",
+   "required": true
+   }
+   ],
+   "responses": {
+   "200": {
+   "description": "successfully Inserted."
+   }
+   }
+   }},
+   "/api/genres/Thrillers":{
+    "get":{
+   "description": "Diplays movies of requied category",
+       "responses": {
+       "200": {
+       "description": "Successfully fetched the data"
+       }
+       }
+           },
+   "post": {
+"description": "Api of insert",
+"consumes": [
+"application/json"
+],
+"produces": [
+"application/json"
+],
+"parameters": [
+{
+"in": "body",
+"name": "body",
+"description": "inserting new movies",
+"required": true
+}
+],
+"responses": {
+"200": {
+"description": "successfully Inserted."
+}
+}
+}},
+    "/api/genres/Horror/:id" : {
+    "delete": {
+    "parameters": [
+    {
+    "name": "id",
+    "in": "path",
+    "type": "integer",
+    "format": "int64"
+    }
+    ],
+    "description": "To delete by the id",
+    "responses": {
+    "200": {
+    "description": "Successfully deleted the data"
+    }
+    }
+    },
+    "put": {
+    "parameters": [
+    {
+    "name": "id",
+    "in": "path",
+    "type": "integer",
+    "format": "int64"
+    },
+    {
+    "in": "body",
+    "name": "body",
+    "description": "add movie or update movie",
+    "required": true
+    }
+    ],
+    "description": "Api of Update",
+    "summary": "Update an existing movie ",
+    "consumes": [
+    "application/json"
+    ],
+    "produces": [
+    "application/json"
+    ],
+    "responses": {
+    "200": {
+    "description": "successfully Inserted."
+    }
+    }
+    }
+    },
+    "/api/genres/Romantic/:id" : {
+    "delete": {
+    "parameters": [
+    {
+    "name": "id",
+    "in": "path",
+    "type": "integer",
+    "format": "int64"
+    }
+    ],
+    "description": "To delete by the id",
+    "responses": {
+    "200": {
+    "description": "Successfully deleted the data"
+    }
+    }
+    },
+    "put": {
+    "parameters": [
+    {
+    "name": "id",
+    "in": "path",
+    "type": "integer",
+    "format": "int64"
+    },
+    {
+    "in": "body",
+    "name": "body",
+    "description": "add movie or update movie",
+    "required": true
+    }
+    ],
+    "description": "Api of Update",
+    "summary": "Update an existing movie ",
+    "consumes": [
+    "application/json"
+    ],
+    "produces": [
+    "application/json"
+    ],
+    "responses": {
+    "200": {
+    "description": "successfully Inserted."
+    }
+    }
+    }
+    },
+    "/api/genres/Thrillers/:id" : {
+    "delete": {
+    "parameters": [
+    {
+    "name": "id",
+    "in": "path",
+    "type": "integer",
+    "format": "int64"
+    }
+    ],
+    "description": "To delete by the id",
+    "responses": {
+    "200": {
+    "description": "Successfully deleted the data"
+    }
+    }
+    },
+    "put": {
+    "parameters": [
+    {
+    "name": "id",
+    "in": "path",
+    "type": "integer",
+    "format": "int64"
+    },
+    {
+    "in": "body",
+    "name": "body",
+    "description": "add movie or update movie",
+    "required": true
+    }
+    ],
+    "description": "Api of Update",
+    "summary": "Update an existing movie ",
+    "consumes": [
+    "application/json"
+    ],
+    "produces": [
+    "application/json"
+    ],
+    "responses": {
+    "200": {
+    "description": "successfully Inserted."
+    }
+    }
+    }
+    }  
+    }
+    }
